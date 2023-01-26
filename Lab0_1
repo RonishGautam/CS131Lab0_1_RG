@@ -1,0 +1,55 @@
+public class squareclass {
+	
+private double side;
+
+public squareclass(){
+	this.side=0;
+}
+public squareclass(double side) {
+	this.side=side;
+}	
+public double getside() {
+	return side;
+}
+public void setside(double side) {
+	this.side=side;
+}
+public double area() {
+	return side * side;
+	
+}
+
+	}
+  
+  
+public class Circleclass {
+private double radius = 1;
+
+	public Circleclass() {
+		this.radius =0;
+	}
+	public Circleclass(double radius) {
+	this.radius=radius;
+}	
+public double getradius() {
+	return radius;
+}
+public void setradius(double radius) {
+	this.radius=radius;
+}
+public double area(){
+	return radius * radius * Math.PI;
+}
+}
+public class Application {
+
+	public static void main(String[] args) {
+	squareclass sc = new squareclass(5);
+	System.out.println("The area of square is: " + sc.area());
+	
+	Circleclass newcircle = new Circleclass(1);
+	System.out.println("The area of circle is: " + newcircle.area());
+		
+	}
+
+}
